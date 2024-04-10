@@ -6,10 +6,10 @@ import org.springframework.modulith.ApplicationModuleListener;
 public class HouseKeeping {
 
     /**
-     * Process reservation completed event.
+     * Process reservation completed event, to ensure housekeeping staff are prepared for incoming guests
      */
     @ApplicationModuleListener
-    void updateStock(Reservation.ReservationCompleted order) {
-
+    void processReservation(Reservation.ReservationCompleted reservation) {
+        // pre-plan schedule, etc
     }
 }
