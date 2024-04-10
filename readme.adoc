@@ -1,7 +1,7 @@
 = Hotel Grand Monolith
 
 Welcome to the Hotel Grand Monolith, where our code is as cozy as our beds! In this delightful repository,
-we've whipped up a snazzy hotel booking/reservation application that's as flexible as it is fabulous.
+we've whipped up a snazzy https://spring.io/projects/spring-modulith[Spring Modulith] based hotel booking/reservation application that's as flexible as it is fabulous
 
 Embracing the modular monolith approach, our codebase is like a trusty Swiss army knife –
 versatile, efficient, and ready to spring into action whenever you need it. And hey, if you ever
