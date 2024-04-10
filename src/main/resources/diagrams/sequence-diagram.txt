@@ -1,0 +1,27 @@
+sequenceDiagram
+    participant G as Guest
+    participant W as Website
+    participant R as Reservation Service
+    participant RI as Room Inventory
+    participant BP as Billing Payment
+    participant E as Event Bus
+    participant GM as Guest Management
+
+    G ->> W: visit
+    W ->> RI: browse
+    W ->> R: reserve
+    R ->> RI: confirm availability
+    RI ->> R: invoice
+    R ->> W: billing & payment
+    W ->> BP: pay
+    BP ->> BP: process
+    BP ->> E: reservation
+    Note right of BP: event
+    BP ->> W: paid
+    W ->> G: reserved
+    E --X R: reservation
+    Note left of E: event
+    E --X GM: reservation
+    Note right of E: event
+    E --X RI: reservation
+    Note left of E: event

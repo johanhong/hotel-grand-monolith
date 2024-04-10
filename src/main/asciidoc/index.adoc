@@ -1,0 +1,26 @@
+= Developer documentation
+
+:moduliths: ../../../target/spring-modulith-docs
+
+== Overview
+plantuml::{moduliths}/components.puml[format=svg,title="Overall component overview"]
+
+== Reservation
+plantuml::{moduliths}/module-reservation.puml[format=svg,title="Reservation component overview"]
+include::{moduliths}/module-reservation.adoc[]
+
+== Inventory
+plantuml::{moduliths}/module-inventory.puml[format=svg,title="Inventory component overview"]
+include::{moduliths}/module-inventory.adoc[]
+
+== Payment
+plantuml::{moduliths}/module-payment.puml[format=svg,title="Payment component overview"]
+include::{moduliths}/module-payment.adoc[]
+
+== Guest
+plantuml::{moduliths}/module-guest.puml[format=svg,title="Guest component overview"]
+include::{moduliths}/module-guest.adoc[]
+
+== HouseKeeping
+plantuml::{moduliths}/module-housekeeping.puml[format=svg,title="HouseKeeping component overview"]
+include::{moduliths}/module-housekeeping.adoc[]
