@@ -9,7 +9,7 @@ import org.springframework.modulith.ApplicationModuleListener;
 @RequiredArgsConstructor
 public class Inventory {
 
-	private final InventoryRepository repository;
+	private final Inventories repository;
 
 	/**
 	 * Process reservation completed event.

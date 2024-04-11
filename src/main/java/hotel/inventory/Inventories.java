@@ -3,6 +3,6 @@ package hotel.inventory;
 import org.jmolecules.ddd.annotation.Repository;
 
 @Repository
-class InventoryRepository {
+class Inventories {
 
 }

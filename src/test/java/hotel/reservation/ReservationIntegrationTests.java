@@ -4,6 +4,7 @@ import static org.assertj.core.api.Assertions.*;
 
 import hotel.guest.Guest.GuestIdentifier;
 import hotel.reservation.Reservation.ReservationCompleted;
+import hotel.reservation.internal.Reservations;
 import lombok.RequiredArgsConstructor;
 
 import java.util.UUID;
@@ -18,7 +19,7 @@ import org.springframework.modulith.test.Scenario;
 class ReservationIntegrationTests {
 
 	private final ReservationManagement orders;
-	private final ReservationRepository repository;
+	private final Reservations repository;
 
 	@Test
 	void bootstrapsOrderModule() {

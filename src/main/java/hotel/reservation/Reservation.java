@@ -35,7 +35,7 @@ public class Reservation extends AbstractAggregateRoot<Reservation> implements A
 		this.customer = Association.forId(customerId);
 	}
 
-	Reservation complete() {
+	public Reservation complete() {
 
 		this.status = Status.COMPLETED;
 		// register the domain event, domain events are published when the aggregate is about to get persisted
@@ -43,7 +43,7 @@ public class Reservation extends AbstractAggregateRoot<Reservation> implements A
 		return this;
 	}
 
-	Reservation add(LineItem item) {
+	public Reservation add(LineItem item) {
 
 		this.lineItems.add(item);
 		return this;
