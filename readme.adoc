@@ -11,6 +11,9 @@ So grab your virtual suitcase and let's dive into the world of hotel bookings, o
 == Sequence Diagram:
 image::img/sequence-diagram.jpg[Sequence Diagram]
 
+== Module Diagram:
+image::img/module-diagram.jpg[Module Diagram]
+
 == Mission Statement
 
 When embarking on a new project, whether it be structured as a monolith, microservices architecture,
